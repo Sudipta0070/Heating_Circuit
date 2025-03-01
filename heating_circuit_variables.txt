@@ -1,0 +1,12 @@
+A1 intBelow(1) "LSQ matrix coefficient"
+Ax intBelow(X) "LSQ matrix coefficient"
+Ay intBelow(Y) "LSQ matrix coefficient"
+Axx intBelow(X*X) "LSQ matrix coefficient"
+Ayy intBelow(Y*Y) "LSQ matrix coefficient"
+Axy intBelow(X*Y) "LSQ matrix coefficient"
+bw intBelow(w) "LSQ right hand side"
+bwx intBelow(w*X) "LSQ right hand side"
+bwy intBelow(w*Y) "LSQ right hand side"
+w_0 AInv.invT11*bw+AInv.invT12*bwx+AInv.invT13*bwy "Average w"
+w_x AInv.invT21*bw+AInv.invT22*bwx+AInv.invT23*bwy dw/dX
+w_y AInv.invT31*bw+AInv.invT32*bwx+AInv.invT33*bwy dw/dY
